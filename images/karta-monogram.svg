@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title">
+  <title id="title">Monogram Karta Studio</title>
+  <rect x="8" y="8" width="184" height="184" rx="48" fill="#101827" stroke="#818cf8" stroke-opacity=".65" stroke-width="4"/>
+  <path d="M61 43h22v48l43-48h28l-48 53 50 61h-29l-38-47-6 7v40H61Z" fill="#f8fafc"/>
+  <path d="m143 117 17-24 14 24-14 24Z" fill="#38bdf8"/>
+</svg>
