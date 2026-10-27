@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.getElementById('splash-screen');
+
+    if (splashScreen) {
+        const dismissSplashScreen = () => {
+            window.setTimeout(() => {
+                splashScreen.classList.add('is-hidden');
+                window.setTimeout(() => {
+                    splashScreen.style.display = 'none';
+                    splashScreen.setAttribute('aria-hidden', 'true');
+                }, 700);
+            }, 1200);
+        };
+
+        if (document.readyState === 'complete') {
+            dismissSplashScreen();
+        } else {
+            window.addEventListener('load', dismissSplashScreen, { once: true });
+        }
+    }
+
     const cursorGlow = document.getElementById('cursor-glow');
     const cursorDot = document.getElementById('cursor-dot');
 
